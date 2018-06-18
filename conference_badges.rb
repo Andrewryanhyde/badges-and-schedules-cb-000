@@ -24,6 +24,6 @@ end
 def printer(newArray, speakers)
   newArray.each do |badge|
     return badge
-  en
+  end
 
 end
