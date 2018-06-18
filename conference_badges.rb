@@ -13,11 +13,9 @@ def batch_badge_creator(array)
 end
 
 def assign_rooms(speakers)
-  hash = hash.new
+  speakers_with_rooms = []
   speakers.each_with_index do |name, index|
-    hash[name] = index
-    return "Hello, #{name}! You'll be assigned to room #{index}!"
+    speakers_with_rooms.push("Hello, #{name}! You'll be assigned to room #{index}!")
   end
-
-  end
+  return speakers_with_rooms
 end
