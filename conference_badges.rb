@@ -12,21 +12,21 @@ def batch_badge_creator(array)
   return newArray
 end
 
-def assign_rooms(speakers)
+def assign_rooms(array)
   speakers_with_rooms = []
 
-  speakers.each.with_index(1) do |name, index|
+  array.each.with_index(1) do |name, index|
     speakers_with_rooms.push("Hello, #{name}! You'll be assigned to room #{index}!")
   end
   return speakers_with_rooms
 end
 
-def printer(newArray, speakers)
-  newArray.each do |badge|
-    return badge
+def printer(newArray, array)
+  batch_badge_creator(array).each do |badge| 
+    puts badge 
   end
 
-  assign_rooms(speakers).each do |name|
+  assign_rooms(array).each do |name|
     puts name
   end
 
