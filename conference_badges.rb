@@ -21,7 +21,7 @@ def assign_rooms(array)
   return speakers_with_rooms
 end
 
-def printer(newArray, array)
+def printer(array)
   batch_badge_creator(array).each do |badge|
     puts badge
   end
