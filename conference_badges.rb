@@ -26,7 +26,7 @@ def printer(newArray, speakers)
     return badge
   end
 
-  speakers.each do |name|
+  assign_rooms(speakers).each do |name|
     puts name
   end
 
